@@ -19,7 +19,7 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon context dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv command_execution_time load time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv command_execution_time)
 
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
@@ -40,4 +40,12 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=fg=10
 
 autoload run-help
 
+# Required for kill autocomplete
+setopt MENUCOMPLETE
+
 alias c='pygmentize -O style=borland -f console256 -g'
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+path+=(~/Library/Python/2.7/bin/)
