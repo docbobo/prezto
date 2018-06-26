@@ -47,6 +47,11 @@ path=(
   $path
 )
 
+fpath=(
+  /usr/local/Cellar/zsh-completions/0.27.0/share/zsh-completions 
+  $fpath
+)
+
 #
 # Less
 #

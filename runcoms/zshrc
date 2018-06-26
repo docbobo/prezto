@@ -16,9 +16,10 @@ POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %H:%M:%S \uf073 %d.%m.%y}"
 
 POWERLEVEL9K_STATUS_VERBOSE=false
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+#POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon context dir dir_writable vcs)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status os_icon context dir dir_writable vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv command_execution_time)
 
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
@@ -47,5 +48,3 @@ alias c='pygmentize -O style=borland -f console256 -g'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-path+=(~/Library/Python/2.7/bin/)

@@ -9,3 +9,10 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+path+=(
+	~/Library/Python/2.7/bin/
+)
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
